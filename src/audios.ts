@@ -1,0 +1,11 @@
+import summerSound from './assets/sounds/summer.mp3'
+import rainSound from './assets/sounds/rain.mp3'
+import winterSound from './assets/sounds/winter.mp3'
+
+import { IAudios } from './declarations/audios'
+
+export const audios: IAudios = {
+  summer: new Audio(summerSound),
+  rain: new Audio(rainSound),
+  winter: new Audio(winterSound),
+}

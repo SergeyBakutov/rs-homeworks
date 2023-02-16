@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  src: url('./assets/fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 0.25s ease;
+
+  &_summer-bg {
+    background-image: url('./assets/images/summer-bg.jpg');
+  }
+
+  &_rain-bg {
+    background-image: url('./assets/images/rainy-bg.jpg');
+  }
+
+  &_winter-bg {
+    background-image: url('./assets/images/winter-bg.jpg');
+  }
+}
+
+.app__blur {
+  height: 100%;
+  backdrop-filter: blur(5px);
+}
+
+.app__content {
+  max-width: 80%;
+  padding: 20px 0;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app__title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+
+  transition: color 0.25s ease;
+
+  &_orange {
+    color: #ed7235;
+  }
+
+  &_white {
+    color: #fff;
+  }
+
+  &_black {
+    color: #000;
+  }
+}
+
+.app__buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.app__button {
+  width: 250px;
+  height: 250px;
+
+  display: flex;
+
+  border-radius: 30px;
+  border: 1px solid #fff;
+
+  outline: none;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  transition: transform 0.1s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  &_summer {
+    background-image: url('./assets/images/summer-bg.jpg');
+  }
+
+  &_rainy {
+    background-image: url('./assets/images/rainy-bg.jpg');
+  }
+
+  &_winter {
+    background-image: url('./assets/images/winter-bg.jpg');
+  }
+
+  &_pause::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: url('./assets/icons/sun.svg') center / 100px 100px no-repeat;
+  }
+}
+
+.app__button-icon {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &_sun {
+    background-image: url('./assets/icons/sun.svg');
+  }
+
+  &_rain {
+    background-image: url('./assets/icons/cloud-rain.svg');
+  }
+
+  &_snow {
+    background-image: url('./assets/icons/cloud-snow.svg');
+  }
+
+  &_pause {
+    background-image: url('./assets/icons/pause.svg');
+  }
+}
+
+.app__volume {
+  margin-top: 30px;
+}
