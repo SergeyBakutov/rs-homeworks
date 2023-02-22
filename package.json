@@ -1,0 +1,23 @@
+{
+  "name": "rs-homeworks",
+  "version": "1.0.0",
+  "description": "Homeworks from Result School",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeyBakutov/rs-homeworks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergeyBakutov/rs-homeworks/issues"
+  },
+  "homepage": "https://github.com/SergeyBakutov/rs-homeworks#readme",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
