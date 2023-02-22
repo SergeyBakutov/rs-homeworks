@@ -8,3 +8,7 @@ App "Weather sounds" (only JS): https://github.com/SergeyBakutov/rs-homeworks/tr
 ## Homework №2 (Typescript)
 
 App "Weather sounds" with TS: https://github.com/SergeyBakutov/rs-homeworks/tree/homework-2
+
+## Homework №3 (Typescript)
+
+Typing tasks: https://github.com/SergeyBakutov/rs-homeworks/tree/homework-3
